@@ -1,0 +1,21 @@
+.tel-input {
+	border: 1px solid #e6e6e6;
+	padding: 15px 15px;
+	&:focus {
+		border: 1px solid #153094;
+		transition: all 0.3s ease 0s;
+	}
+	& input {
+		border-color: none;
+	}
+	&__input {
+		border-color: none;
+	}
+}
+
+.iti {
+	border: none;
+	&__tel-input {
+		border: none;
+	}
+}

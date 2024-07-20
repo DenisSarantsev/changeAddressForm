@@ -1,0 +1,40 @@
+.second-step {
+	&__content	{
+		padding: 25px 15px 30px 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+}
+
+.old-address {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.new-address {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.ss-checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	&:hover {
+		cursor: pointer;
+	}
+	&__input {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&__label {
+		opacity: 0.5;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

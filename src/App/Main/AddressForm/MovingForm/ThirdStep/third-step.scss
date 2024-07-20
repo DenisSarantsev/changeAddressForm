@@ -1,0 +1,55 @@
+.third-step {
+	&__content {
+		padding: 25px 15px 30px 15px;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+	&__plan {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		& label {
+			font-size: 16px;
+			text-align: start;
+			display: flex;
+			align-items: start;
+			gap: 2px;
+			& input {
+				//display: none;
+				text-align: start;
+			}
+		}
+	}
+	&__plan-indi {
+
+	}
+	&__plan-family {
+
+	}
+	&__plan-business {
+
+	}
+}
+
+.submit-button {
+	padding: 25px 25px;
+	background-color: #170075;
+	color: #FFFFFF;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		background-color: #2e00a3;
+		transition: all 0.3s ease 0s;
+	}
+}
+
+.submit-agree {
+	text-align: center;
+	opacity: 0.5;
+	& a {
+		color: #008bfc;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

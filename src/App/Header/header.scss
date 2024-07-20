@@ -1,0 +1,32 @@
+.header {
+	padding: 15px 0px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__logo {
+		max-width: 350px;
+		height: auto;
+	}
+	&__navigation {
+		padding: 0px 30px;
+	}
+	&__navigation-list {
+		display: flex;
+		gap: 15px;
+	}
+	&__navigation-item {
+		padding: 5px;
+		font-size: 18px;
+		color: #0d1a33;
+		 &:hover {
+			text-decoration: underline;
+			cursor: pointer;
+			color: #153094;
+		 }
+	}
+	&__navigation-link {
+
+	}
+}

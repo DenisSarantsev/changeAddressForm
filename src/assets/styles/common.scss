@@ -1,0 +1,35 @@
+// Боковые отступы для контейнера блока
+.container-padding {
+	padding: 0px 15px;
+}
+
+// Address form main styles
+.form-card {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 33px -18px rgba(23,0,117,0.52);
+	-webkit-box-shadow: 0px 0px 33px -18px rgba(23,0,117,0.52);
+	-moz-box-shadow: 0px 0px 33px -18px rgba(23,0,117,0.52);
+}
+.form-card-title-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+	background: #170075;
+	color: #FFFFFF;
+}
+.form-input {
+	border: 1px solid #e6e6e6;
+	padding: 15px 15px;
+	&:focus {
+		border: 1px solid #153094;
+		transition: all 0.3s ease 0s;
+	}
+}
+
+// Main colors
+$textColor: #0d1a33;
+$linkHover: #153094;
+$blueVioletGradient: linear-gradient(132deg, rgba(72,3,159,1) 18%, rgba(3,36,99,1) 81%);

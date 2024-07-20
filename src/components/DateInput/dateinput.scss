@@ -1,0 +1,50 @@
+.date-input {
+	padding: 0px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #e6e6e6;
+	gap: 25px;
+	//background-color: ;
+	&__container {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		font-size: 18px;
+		& input {
+			//border: 1px solid #e6e6e6;
+			border: none;
+			padding: 5px 15px;
+			background-color: rgba(232, 232, 232, 0.3);
+			&::placeholder {
+				font-size: 18px;
+			}
+			&:hover {
+				cursor: pointer;
+			}
+			// &:focus {
+			// 	border: 1px solid #153094;
+			// 	transition: all 0.3s ease 0s;
+			// }
+		}
+	}
+	& h2 {
+		font-size: 16px;
+		font-weight: 400;
+		padding-bottom: 2px;
+	}
+	&__date-picker {
+
+	}
+	&__icon {
+		display: none;
+		width: 25px;
+		height: auto;
+	}
+}
+
+
+.disabled-calendar {
+  opacity: 0.5; /* Пример стиля для отключенного календаря */
+  pointer-events: none; /* Отключает взаимодействие с элементами внутри */
+}

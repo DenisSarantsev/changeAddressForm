@@ -1,0 +1,107 @@
+button,
+input[type="button"],
+input[type="submit"] {
+    background: none;     /* Убирает фон */
+    border: none;         /* Убирает границу */
+    //padding: 0;           /* Убирает внутренние отступы */
+    margin: 0;            /* Убирает внешние отступы */
+    font: inherit;        /* Наследует шрифт от родителя */
+    color: inherit;       /* Наследует цвет текста от родителя */
+    cursor: pointer;      /* Меняет курсор на указатель */
+    outline: none;        /* Убирает обводку */
+    appearance: none;     /* Убирает стили браузера */
+    -webkit-appearance: none; /* Убирает стили браузера для WebKit */
+    //-moz-appearance: none;    /* Убирает стили браузера для Mozilla */
+		user-select: none; /* Standard syntax */
+		//-webkit-user-select: none; /* Safari */
+		//-moz-user-select: none; /* Firefox */
+		//-ms-user-select: none; /* Internet Explorer/Edge */
+		-webkit-tap-highlight-color: transparent; /* Disable the highlight on tap */
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus {
+    outline: none;        /* Убирает обводку при фокусе */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+textarea {
+    //background: none;     /* Убирает фон */
+    //border: none;         /* Убирает границу */
+    //padding: 0;           /* Убирает внутренние отступы */
+    margin: 0;            /* Убирает внешние отступы */
+    font: inherit;        /* Наследует шрифт от родителя */
+    //color: inherit;       /* Наследует цвет текста от родителя */
+    //outline: none;        /* Убирает обводку */
+    //appearance: none;     /* Убирает стили браузера */
+    //-webkit-appearance: none; /* Убирает стили браузера для WebKit */
+    //-moz-appearance: none;    /* Убирает стили браузера для Mozilla */
+}
+
+input:focus,
+textarea:focus {
+    outline: none;        /* Убирает обводку при фокусе */
+}
+
+/* Дополнительные стили для кастомных инпутов */
+.custom-input {
+    background-color: #f0f0f0; /* Фоновый цвет */
+    border: 1px solid #ccc;    /* Граница */
+    padding: 10px;             /* Внутренние отступы */
+    border-radius: 5px;        /* Скругленные углы */
+    width: 100%;               /* Ширина */
+    box-sizing: border-box;    /* Включает padding и border в общую ширину и высоту элемента */
+}
+
+.custom-input:focus {
+    border-color: #3498db;     /* Цвет границы при фокусе */
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	text-decoration: none; /* Убирает подчеркивание */
+	color: inherit;        /* Наследует цвет текста от родителя */
+}
+
+a:focus,
+a:hover,
+a:active {
+	outline: none;         /* Убирает обводку при фокусе, наведении и активном состоянии */
+}
+
+ul {
+	list-style-type: none; /* Убирает маркеры списка */
+	padding: 0;            /* Убирает внутренние отступы */
+	margin: 0;             /* Убирает внешние отступы */
+}
+
+li {
+	margin: 0;             /* Убирает внешние отступы элементов списка */
+	padding: 0;            /* Убирает внутренние отступы элементов списка */
+}
+
+/* Disable text selection */
+button {
+	user-select: none; /* Standard syntax */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+body {
+	margin: 0px;
+}
+
+h4 {
+	margin: 0px;
+}
