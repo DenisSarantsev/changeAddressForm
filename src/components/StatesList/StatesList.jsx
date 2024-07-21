@@ -1,16 +1,32 @@
 import { useState } from "react";
 import "./states-list.scss";
+import PropTypes from 'prop-types';
 
-export const StatesList = () => {
+export const StatesList = ({ stateData }) => {
 	const [selectedOption, setSelectedOption] = useState("");
 
   const handleChange = (event) => {
     setSelectedOption(event.target.value);
+		stateData(event.target.value)
   };
 
+	const validateSelect = ( state ) => {
+		if ( state === "State" ) {
+			return false
+		} else {
+			return true
+		}
+	}
+
   return (
-    <div className="states-list">
-      <select value={selectedOption} onChange={handleChange}>
+    <div className={`states-list ${ !validateSelect(selectedOption) ? "red-border" : "" }`}>
+      <select 
+			value={selectedOption} 
+			onChange={(event) => {
+				handleChange(event)
+				stateData(event.target.value)
+			}
+				}>
         <option value="State">State</option>
         <option value="AL">AL - Alabama</option>
 				<option value="AK">AK - Alaska</option>
@@ -79,3 +95,7 @@ export const StatesList = () => {
     </div>
   );
 }
+
+StatesList.propTypes = {
+  stateData: PropTypes.any.isRequired, // или PropTypes.bool, если проп не является обязательным
+};

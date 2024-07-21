@@ -1,6 +1,7 @@
 import "./banner.scss";
+import PropTypes from 'prop-types';
 
-export const Banner = () => {
+export const Banner = ({ handleScroll }) => {
 	return(
 		<div className="banner">
 			<div className="banner__container">
@@ -30,7 +31,9 @@ export const Banner = () => {
 							<span>Complimentary inclusion in the national do-not-call registry</span>
 						</li>
 					</ul>
-					<button className="banner__button">
+					<button 
+						onClick={() => handleScroll()}
+						className="banner__button">
 						<div className="banner__button-title">LETS GET YOU STARTED!</div>
 						<div className="banner__button-subtitle">CHANGE YOUR ADDRESS NOW!</div>
 					</button>
@@ -39,3 +42,7 @@ export const Banner = () => {
 		</div>
 	)
 }
+
+Banner.propTypes = {
+  handleScroll: PropTypes.func.isRequired, // или PropTypes.bool, если проп не является обязательным
+};

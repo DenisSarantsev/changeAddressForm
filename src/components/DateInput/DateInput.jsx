@@ -4,7 +4,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './dateinput.scss';
 import PropTypes from 'prop-types';
 
-export const DateInput = ({ active }) => {
+export const DateInput = ({ active, setTempDate }) => {
 	const [selectedDate, setSelectedDate] = useState(0);
 
 	return(
@@ -13,7 +13,10 @@ export const DateInput = ({ active }) => {
 				<h2>Start date</h2>
 				<DatePicker
 					selected={selectedDate}
-					onChange={(date) => setSelectedDate(date)}
+					onChange={(date) => {
+						setTempDate(date)
+						setSelectedDate(date)
+					}}
 					dateFormat="MM/dd/yyyy"
 					className='date-input__date-picker'
 					placeholderText='MM/DD/YYYY'
@@ -29,4 +32,5 @@ export const DateInput = ({ active }) => {
 
 DateInput.propTypes = {
   active: PropTypes.bool.isRequired, // или PropTypes.bool, если проп не является обязательным
+	setTempDate:  PropTypes.any.isRequired,
 };

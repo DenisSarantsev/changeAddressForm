@@ -1,12 +1,19 @@
 .tel-input {
 	border: 1px solid #e6e6e6;
 	padding: 15px 15px;
+	@media (max-width: 1440px){
+		padding: 1.042vw;
+	}
+	@media (max-width: 768px){
+		padding: 15px;
+	}
 	&:focus {
 		border: 1px solid #153094;
 		transition: all 0.3s ease 0s;
 	}
 	& input {
 		border-color: none;
+		width: 100%;
 	}
 	&__input {
 		border-color: none;

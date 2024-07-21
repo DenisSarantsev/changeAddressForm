@@ -4,4 +4,13 @@
 	grid-template-rows: 1fr;
 	gap: 30px;
 	padding: 60px 30px;
+	@media (max-width: 1440px){
+		gap: 1.7vw;
+		padding: 4.167vw 2.083vw;
+	}
+	@media (max-width: 768px){
+		grid-template-columns: 1fr;
+		gap: 25px;
+		padding: 25px 15px;
+	}
 }
